@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `assessment_db`
 --
-
+CREATE DATABASE IF NOT EXISTS `assessment_db`;
+USE `assessment_db`;
 -- --------------------------------------------------------
 
 --
