@@ -9,13 +9,15 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 ?>
-<div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px; align-items:center;">
+<!-- Global External Stylesheet -->
+<link rel="stylesheet" href="/assessment_beginner/style.css">
+
+<div class="nav-container">
   <a href="/assessment_beginner/index.php">Dashboard</a>
   <a href="/assessment_beginner/pages/clients_list.php">Clients</a>
   <a href="/assessment_beginner/pages/services_list.php">Services</a>
   <a href="/assessment_beginner/pages/bookings_list.php">Bookings</a>
   <a href="/assessment_beginner/pages/tools_list_assign.php">Tools</a>
   <a href="/assessment_beginner/pages/payments_list.php">Payments</a>
-  <a href="/assessment_beginner/logout.php" style="color:red; margin-left:auto;">Logout (<?php echo htmlspecialchars($_SESSION['username']); ?>)</a>
+  <a href="/assessment_beginner/logout.php" style="color: #FFB3A7; margin-left: auto;">Logout (<?php echo htmlspecialchars($_SESSION['username']); ?>)</a>
 </div>
-<hr>

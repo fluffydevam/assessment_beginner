@@ -33,7 +33,11 @@ if (isset($_POST['login'])) {
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Login</title></head>
+<head><meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Login</title>
+
+</head>
 <body>
 <h2>System Login</h2>
 <p style="color:red;"><?php echo $error; ?></p>

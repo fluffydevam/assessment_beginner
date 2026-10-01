@@ -1,0 +1,119 @@
+:root {
+  --bg-color: #F8FBF5;          /* Very Soft Pale Green/Off-White */
+  --primary-color: #FFA54F;     /* Warm Orange (Buttons & Accents) */
+  --secondary-color: #8EB863;   /* Vibrant Soft Green (Nav & Headers) */
+  --accent-pink: #FF70A6;       /* Bright Pink (Highlights & Hover states) */
+  --text-color: #2D372E;        /* Deep Dark Green-Grey Text */
+  --card-bg: #FFFFFF;
+  --border-color: #D6E8C9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-pink);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--card-bg);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  text-align: left;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:hover {
+  background-color: #F2F8EC;
+}
+
+form {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--accent-pink);
+}
+
+/* Styled Navigation Bar */
+.nav-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-container a:hover {
+  color: #FFEE93;
+}
