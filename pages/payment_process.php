@@ -1,6 +1,5 @@
 <?php
-include "../db.php";
-require_once __DIR__ . "/../db.php";
+require_once __DIR__ . "/../db.php"; 
 
 $booking_id = isset($_GET['booking_id']) ? intval($_GET['booking_id']) : 0;
 $message = "";

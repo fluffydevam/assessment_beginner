@@ -1,6 +1,5 @@
 <?php
-include "../db.php";
-require_once __DIR__ . "/../db.php";
+require_once __DIR__ . "/../db.php"; 
 
 $sql = "
 SELECT p.*, b.booking_id, c.full_name AS client_name, s.service_name

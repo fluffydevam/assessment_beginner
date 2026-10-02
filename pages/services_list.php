@@ -1,5 +1,4 @@
 <?php
-include "../db.php";
 require_once __DIR__ . "/../db.php";
 $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC");
 ?>
@@ -21,7 +20,7 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC")
       <td><?php echo $row['service_name']; ?></td>
       <td>₱<?php echo number_format($row['hourly_rate'],2); ?></td>
       <td><?php echo $row['is_active'] ? "Yes" : "No"; ?></td>
-      <td><a href="services_edit.php?id=<?php echo $row['service_id']; ?>">Edit</a></td>
+      <td><button onclick="document.location='services_edit.php?id=<?php echo $row['service_id']; ?>'">Edit</button></td>
     </tr>
   <?php } ?>
 </table>

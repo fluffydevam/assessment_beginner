@@ -1,6 +1,5 @@
 <?php
-include "../db.php";
-require_once __DIR__ . "/../db.php";
+require_once __DIR__ . "/../db.php"; 
 
 $sql = "
 SELECT b.*, c.full_name AS client_name, s.service_name
@@ -18,7 +17,7 @@ $result = mysqli_query($conn, $sql);
 <?php include "../nav.php"; ?>
  
 <h2>Bookings</h2>
-<p><a href="bookings_create.php">+ Create Booking</a></p>
+<button onclick="document.location='bookings_create.php'">Create Booking</button>
  
 <table border="1" cellpadding="8">
   <tr>
@@ -34,7 +33,7 @@ $result = mysqli_query($conn, $sql);
       <td>₱<?php echo number_format($b['total_cost'],2); ?></td>
       <td><?php echo $b['status']; ?></td>
       <td>
-        <a href="payment_process.php?booking_id=<?php echo $b['booking_id']; ?>">Process Payment</a>
+        <button onclick="document.location='payment_process.php?booking_id=<?php echo $b['booking_id']; ?>'">Process Payment</button>
       </td>
     </tr>
   <?php } ?>

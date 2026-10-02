@@ -1,5 +1,5 @@
 <?php
-include "../db.php";
+require_once __DIR__ . "/../db.php"; 
 $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 ?>
 <!doctype html>
@@ -9,7 +9,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 <?php include "../nav.php"; ?>
  
 <h2>Clients</h2>
-<p><a href="clients_add.php">+ Add Client</a></p>
+<button onclick="document.location='clients_add.php'">Add Client</button>
  
 <table border="1" cellpadding="8">
   <tr>
